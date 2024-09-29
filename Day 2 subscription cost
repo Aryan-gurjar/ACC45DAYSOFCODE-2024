@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int T;
+    scanf("%d", &T);  // Read the number of test cases
+
+    while (T--) {
+        int N, X;
+        scanf("%d %d", &N, &X);  // Read the number of friends and the cost of one subscription
+
+        // Calculate the number of subscriptions needed
+        int subscriptions = (N + 5) / 6;  // Equivalent to ceil(N / 6.0)
+        int totalCost = subscriptions * X;
+
+        printf("%d\n", totalCost);  // Print the total cost for this test case
+    }
+
+    return 0;
+}
